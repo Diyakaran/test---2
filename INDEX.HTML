@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Select Your Course</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fdbb2d;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      max-width: 600px;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    h2 {
+      color: #fdbb2d;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      background: #fdbb2d;
+      color: #000;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ffa500;
+    }
+
+    .btn:active {
+      transform: scale(1);
+      background: #ff8c00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Krishna Computer Classes</h1>
+  </header>
+
+  <div class="container">
+    <p>Select a course to start your learning journey:</p>
+    
+    <h2>DTP Courses</h2>
+    <a href="dtp.html" class="btn">DTP</a>
+
+    <h2>Programming Courses</h2>
+    <a href="c++.html" class="btn">C++</a>
+    <a href="java.html" class="btn">Java</a>
+    <a href="python.html" class="btn">Python</a>
+
+    <h2>Creative Courses</h2>
+    <a href="website-designing.html" class="btn">Website Designing</a>
+    <a href="gaming-apps.html" class="btn">Gaming Apps</a>
+    <a href="video-editing.html" class="btn">Video Editing</a>
+
+    <h2>Coding Courses</h2>
+    <a href="coding.html" class="btn">Coding Basics</a>
+
+    <h2>Office Automation Courses</h2>
+    <a href="dca.html" class="btn">DCA</a>
+    <a href="adca.html" class="btn">ADCA</a>
+    <a href="adca-plus.html" class="btn">ADCA+</a>
+    <a href="typing.html" class="btn">Typing</a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.btn').forEach(button => {
+      button.addEventListener('mouseover', () => {
+        button.style.boxShadow = '0 6px 20px rgba(255, 215, 0, 0.5)';
+      });
+
+      button.addEventListener('mouseout', () => {
+        button.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+      });
+    });
+  </script>
+</body>
+</html>

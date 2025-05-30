@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DCA Course - Krishna Computer Classes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      margin: 0;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    header {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #fdbb2d;
+      margin: 0;
+    }
+    main {
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 16px;
+      padding: 30px 40px;
+      max-width: 700px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+      width: 100%;
+    }
+    main h2 {
+      color: #fdbb2d;
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    .course-info {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+    ul.topics {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    ul.topics li {
+      background: #fdbb2d;
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: background 0.3s ease;
+      cursor: default;
+    }
+    ul.topics li:hover {
+      background: #ffa500;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    a.btn {
+      background: #fdbb2d;
+      color: #000;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 15px 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: background 0.3s ease, transform 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    a.btn:hover {
+      background: #ffa500;
+      transform: scale(1.05);
+    }
+    a.btn:active {
+      transform: scale(1);
+      background: #ff8c00;
+    }
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+    @media(max-width: 480px) {
+      main {
+        padding: 20px;
+      }
+      ul.topics {
+        grid-template-columns: 1fr;
+      }
+      a.btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Diploma in Computer Applications (DCA)</h1>
+  </header>
+
+  <main>
+    <h2>Course Overview</h2>
+    <p class="course-info">
+      The DCA course is designed to provide a comprehensive understanding of basic computer applications. 
+      This 3-month program covers essential tools and software to boost your computer skills for personal and professional use.
+    </p>
+
+    <h2>Course Topics</h2>
+    <ul class="topics">
+      <li>Notepad</li>
+      <li>WordPad</li>
+      <li>MS Paint</li>
+      <li>Command Prompt</li>
+      <li>MS Word</li>
+      <li>MS Excel</li>
+      <li>PowerPoint</li>
+    </ul>
+
+    <h2>Duration & Fees</h2>
+    <p class="course-info">
+      <strong>Duration:</strong> 3 Months <br />
+      <strong>Fee:</strong> ₹1800
+    </p>
+
+    <div class="buttons">
+      <a href="dca-course-details.pdf" class="btn" download>
+        <!-- Download icon SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM12 2v12l4-4h-3V2h-2z"/></svg>
+        Download Course PDF
+      </a>
+      <a href="https://www.youtube.com/channel/YOURCHANNELID" target="_blank" rel="noopener" class="btn">
+        <!-- YouTube icon SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.6 7.2c-.2-.8-.8-1.4-1.6-1.6C16.2 5.4 12 5.4 12 5.4s-4.2 0-6 .2c-.8.2-1.4.8-1.6 1.6C4 9 4 12 4 12s0 3 .4 4.8c.2.8.8 1.4 1.6 1.6 1.8.2 6 .2 6 .2s4.2 0 6-.2c.8-.2 1.4-.8 1.6-1.6.4-1.8.4-4.8.4-4.8s0-3-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+        Visit Our YouTube Channel
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Krishna Computer Classes
+  </footer>
+</body>
+</html>
